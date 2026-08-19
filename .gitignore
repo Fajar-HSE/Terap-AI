@@ -52,3 +52,9 @@ next-env.d.ts
 build-log.txt
 on-build.txt
 
+
+# OpenNext auto-migrate (dibangkitkan saat deploy Cloudflare)
+wrangler.jsonc
+open-next.config.ts
+cloudflare-env.d.ts
+
