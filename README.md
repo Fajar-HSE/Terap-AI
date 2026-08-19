@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexova AI — Website Company Profile (AI Consulting)
 
-## Getting Started
+Website premium company profile untuk perusahaan jasa konsultasi & implementasi
+AI (UMKM → enterprise). Dibangun dengan **Next.js 16 (App Router) + TypeScript +
+Tailwind CSS v4 + Motion + Phosphor Icons**, dengan **Ghost CMS** sebagai headless
+CMS untuk halaman wawasan.
 
-First, run the development server:
+> Nama **"Nexova"** adalah placeholder desain — ganti semua nilai brand di
+> `src/lib/site.ts` sebelum production.
+
+## Menjalankan
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # production build (lint + typecheck + prerender)
+npm start          # menjalankan hasil build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Struktur penting
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├─ app/                     # halaman (App Router)
+│  ├─ page.tsx              # Home (11 section)
+│  ├─ tentang/              # About
+│  ├─ layanan/              # Services (8 layanan)
+│  ├─ solusi/               # Solutions (8 pola masalah→solusi)
+│  ├─ kisah-sukses/         # Case Studies (format Challenge→Approach→Result)
+│  ├─ wawasan/ [+[slug]]    # Insights listing + detail artikel
+│  └─ kontak/               # Kontak + form konversi
+├─ components/
+│  ├─ layout/               # Header, Footer
+│  ├─ ui/                   # Button, Container, Reveal, SectionHeader, dll
+│  ├─ home/                 # Section komponen Home
+│  ├─ articles/             # ArticleCard
+│  └─ contact/              # ContactForm
+├─ data/                    # Konten contoh (services, solutions, cases, insights)
+├─ lib/                     # site config, ghost client, tipe artikel
+└─ app/globals.css          # Design tokens (desain system)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Ghost CMS
 
-## Learn More
+Halaman `/wawasan` membaca artikel dari Ghost Content API. Konfigurasi via
+environment (`cp .env.example .env.local`):
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+GHOST_CONTENT_URL=https://your-ghost-blog.example
+GHOST_CONTENT_KEY=your-content-api-key
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Jika belum dikonfigurasi, situs memakai artikel contoh dari `src/data/insights.ts`
+(artikel ditandai `isSample`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Desain
 
-## Deploy on Vercel
+Direction & design system lengkap: `docs/design-direction.md`. Tokens warna,
+tipografi (Space Grotesk + Manrope), spacing, radius, dan shadow diterapkan di
+`src/app/globals.css`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Sebelum live — checklist penggantian placeholders
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Nama brand, email, telepon, WhatsApp, kota di `src/lib/site.ts`
+- [ ] Logo nyata (ganti `src/components/ui/logo.tsx`)
+- [ ] Foto tim & studi kasus (slot berlabel "PLACEHOLDER" di halaman terkait)
+- [ ] Data studi kasus, metrik, dan testimoni asli (`src/data/cases.ts`)
+- [ ] Artikel asli di Ghost + env Ghost API
+- [ ] Form kontak dihubungkan ke backend/CRM Anda
+- [ ] Opengraph image & favicon sesuai brand (lihat `src/app/opengraph-image.tsx`)
