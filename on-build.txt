@@ -1,0 +1,83 @@
+﻿
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé OpenNext ΓÇö Cloudflare build Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+
+node.exe : WARN OpenNext is not fully compatible with Windows.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Users\ASUS A516EAO\AppData\R ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARN OpenNext i...e with Windows.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARN For optimal performance, it is recommended to use Windows Subsystem for Linux (WSL).
+WARN While OpenNext may function on Windows, it could encounter unpredictable failures during runtime.
+App directory: D:\Documents\Default Project\nexova-ai
+Next.js version : 16.3.1
+@opennextjs/cloudflare version: 1.20.2
+@opennextjs/aws version: 4.1.0
+workerd compatibility_date: 2026-08-19
+
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé OpenNext ΓÇö Building Next.js app Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+
+
+> terap-ai@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.3.1 (Turbopack)
+Γ£ô Running next.config.ts took 959ms
+Using secrets defined in .dev.vars
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 1930ms
+  Running TypeScript ...
+  Finished TypeScript in 14.0s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/17) ...
+  Generating static pages using 3 workers (4/17) 
+  Generating static pages using 3 workers (8/17) 
+  Generating static pages using 3 workers (12/17) 
+Γ£ô Generating static pages using 3 workers (17/17) in 1182ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /kisah-sukses
+Γö£ ╞Æ /kontak
+Γö£ Γùï /layanan
+Γö£ Γùï /opengraph-image
+Γö£ Γùï /robots.txt
+Γö£ Γùï /sitemap.xml
+Γö£ Γùï /solusi
+Γö£ Γùï /tentang
+Γö£ Γùï /wawasan
+Γöö   /wawasan/[slug]
+  Γö£ ΓùÅ /wawasan/ai-readiness-bukan-soal-teknologi
+  Γö£ ΓùÅ /wawasan/umkm-mulai-dari-membuktikan-manfaat
+  Γö£ ΓùÅ /wawasan/human-in-the-loop
+  Γöö ΓùÅ /wawasan/automasi-bukan-pengurangan-tim
+
+
+Γùï  (Static)   prerendered as static content
+ΓùÅ  (SSG)      prerendered as static HTML (uses generateStaticParams)
+╞Æ  (Dynamic)  server-rendered on demand
+
+
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé OpenNext ΓÇö Generating bundle Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+
+Bundling middleware function...
+Bundling static assets...
+Bundling cache assets...
+Building server function: default...
+Applying code patches: 7.683s
+# copyPackageTemplateFiles
+[35mΓÜÖ∩╕Å Bundling the OpenNext server...
+[0m
+[35mWorker saved in `.open-next\worker.js` ≡ƒÜÇ
+[0m
+OpenNext build complete.
