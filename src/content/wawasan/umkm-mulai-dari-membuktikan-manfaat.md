@@ -4,7 +4,7 @@ excerpt: "Untuk skala UMKM, strategi AI terbaik adalah memilih satu proses denga
 publishedAt: "2026-07-18T09:00:00.000Z"
 readingTime: 5
 tags: ["UMKM", "Panduan"]
-author: "Tim Nexova"
+author: "Fajar"
 ---
 
 ## Satu kemenangan kecil, dampak besar

@@ -4,7 +4,7 @@ excerpt: "AI terbaik tidak menggantikan manusia pada keputusan penting — ia me
 publishedAt: "2026-06-27T09:00:00.000Z"
 readingTime: 4
 tags: ["Governance", "Otomasi"]
-author: "Tim Nexova"
+author: "Fajar"
 ---
 
 ## Otomasi bukan berarti hilangnya kontrol

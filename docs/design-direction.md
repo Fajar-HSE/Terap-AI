@@ -1,6 +1,6 @@
-# Nexova AI — Design Direction
+# Terap AI — Design Direction
 
-> Nama "Nexova AI" adalah **placeholder** — mudah diganti (ada di `src/lib/site.ts`).
+> Nama "Terap AI" adalah brand utama (diatur di `src/lib/site.ts`).
 
 ## Design Read
 

@@ -28,7 +28,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface px-3.5 py-1.5 text-xs font-semibold text-muted"
             >
               <span className="size-1.5 rounded-full bg-accent" aria-hidden />
-              AI Consulting & Implementation
+              AI untuk Lembaga Pelatihan & Sertifikasi
             </motion.p>
 
             <motion.h1
@@ -43,8 +43,9 @@ export function Hero() {
               {...anim(0.16)}
               className="max-w-[46ch] text-lg leading-relaxed text-muted"
             >
-              Konsultasi dan implementasi AI untuk UMKM hingga enterprise — dari
-              menemukan peluang, hingga sistem yang benar-benar berjalan.
+              Konsultasi dan implementasi AI untuk lembaga pelatihan &
+              sertifikasi — dari menyusun proposal hingga mengelola database
+              peserta, hingga sistem yang benar-benar berjalan.
             </motion.p>
 
             <motion.div

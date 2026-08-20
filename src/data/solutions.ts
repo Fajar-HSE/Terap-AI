@@ -1,13 +1,13 @@
 import type { Icon } from "@phosphor-icons/react";
 import {
-  Lightning,
-  ChatCircleText,
+  FileText,
   Funnel,
+  ChatCircleText,
+  Database,
   Question,
   Wrench,
-  FileText,
+  BookOpen,
   TrendUp,
-  Timer,
 } from "@phosphor-icons/react/dist/ssr";
 
 export type Solution = {
@@ -19,78 +19,78 @@ export type Solution = {
   prompt: string;
 };
 
-/** Diorganisasi berdasarkan masalah bisnis, bukan teknologi. */
+/** Diorganisasi berdasarkan masalah lembaga pelatihan & sertifikasi, bukan teknologi. */
 export const solutions: Solution[] = [
   {
-    slug: "automate-repetitive",
-    icon: Timer,
-    problem: "Menghilangkan pekerjaan berulang yang menyita waktu tim",
-    outcome:
-      "Proses rutin berjalan otomatis dengan supervise manusia pada titik kritis — tim fokus pada pekerjaan bernilai tinggi.",
-    industries: ["Operasi", "Administrasi", "F&B"],
-    prompt: "Otomasi proses berulang",
-  },
-  {
-    slug: "customer-response",
-    icon: ChatCircleText,
-    problem: "Memberikan respons pelanggan yang cepat dan konsisten",
-    outcome:
-      "Asisten AI menangani pertanyaan umum 24/7, eskalasi ke manusia terjadi otomatis saat konteks kompleks.",
-    industries: ["Retail", "E-commerce", "Jasa"],
-    prompt: "Automasi layanan pelanggan",
-  },
-  {
-    slug: "lead-qualification",
-    icon: Funnel,
-    problem: "Mengotomatiskan kualifikasi dan follow-up prospek",
-    outcome:
-      "Setiap lead terkualifikasi otomatis, direspons cepat, dan diarahkan ke sales di waktu yang tepat.",
-    industries: ["Sales", "B2B", "Distribusi"],
-    prompt: "Automasi kualifikasi prospek",
-  },
-  {
-    slug: "knowledge-assistant",
-    icon: Question,
-    problem: "Membuat pengetahuan internal dapat diakses semua orang",
-    outcome:
-      "Data know-how perusahaan (manual, SOP, dokumen) menjadi asisten yang menjawab pertanyaan tim secara akurat.",
-    industries: ["Manufaktur", "Keuangan", "Korporasi"],
-    prompt: "Asisten pengetahuan internal",
-  },
-  {
-    slug: "document-processing",
+    slug: "proposal-pelatihan",
     icon: FileText,
-    problem: "Memproses dokumen dan formulir tanpa input tangan",
+    problem: "Menyusun proposal pelatihan & penawaran sertifikasi memakan waktu",
     outcome:
-      "Faktur, kontrak, dan formulir diekstrak otomatis ke sistem — akurasi tinggi, jejak audit tersimpan.",
-    industries: ["Keuangan", "Logistik", "Administrasi"],
-    prompt: "Pemrosesan dokumen otomatis",
+      "Dari brief singkat klien, AI menyusun draf proposal dan penawaran sertifikasi yang rapi — tinggal Anda review dan kirim, bukan mulai dari nol.",
+    industries: ["Lembaga Pelatihan", "Sertifikasi", "BNSP"],
+    prompt: "Draft proposal pelatihan",
   },
   {
-    slug: "sales-intelligence",
-    icon: TrendUp,
-    problem: "Mengubah data pasar dan pelanggan menjadi insight penjualan",
+    slug: "riset-klien",
+    icon: Funnel,
+    problem: "Menemukan perusahaan yang benar-benar butuh pelatihan & sertifikasi",
     outcome:
-      "Ringkasan kompetitor, tren, dan skor peluang tersaji otomatis untuk keputusan sales yang lebih tajam.",
-    industries: ["Sales", "Corporate", "Startup"],
-    prompt: "Sales intelligence AI",
+      "Riset dan pemfilteran calon klien berjalan otomatis berdasarkan kebutuhan kompetensi — daftar prospek yang relevan, bukan daftar acak.",
+    industries: ["Lembaga Pelatihan", "HR", "Korporasi"],
+    prompt: "Riset calon klien",
   },
   {
-    slug: "marketing-automation",
-    icon: Lightning,
-    problem: "Menghasilkan konten dan kampanye dengan langkah lebih sedikit",
+    slug: "follow-up-peserta",
+    icon: ChatCircleText,
+    problem: "Peserta yang ragu tidak kunjung mendaftar",
     outcome:
-      "Ide, drafting, dan personalisasi kampanye dipercepat — tetap melewati review manusia dan brand guideline.",
-    industries: ["Marketing", "UMKM", "Agen"],
-    prompt: "Automasi pemasaran",
+      "Follow-up otomatis dan personal menjaga calon peserta tetap termonitor hingga mendaftar — tanpa Anda mengejar satu per satu.",
+    industries: ["Peserta", "Lembaga Pelatihan"],
+    prompt: "Follow-up peserta",
   },
   {
-    slug: "operational-automation",
+    slug: "database-sertifikasi",
+    icon: Database,
+    problem: "Data peserta & status sertifikat tersebar dan sulit dilacak",
+    outcome:
+      "Database peserta dan pelacakan status sertifikat terpusat — tahu siapa lulus, siapa perlu refresh, dan kapan sertifikat jatuh tempo.",
+    industries: ["Sertifikasi", "Lembaga Pelatihan"],
+    prompt: "Database sertifikasi",
+  },
+  {
+    slug: "tanya-jawab-peserta",
+    icon: Question,
+    problem: "Calon peserta bertanya berulang di luar jam kerja",
+    outcome:
+      "Asisten AI menjawab pertanyaan umum calon peserta 24/7 — jadwal, persyaratan, biaya — dan meneruskan yang kompleks ke tim Anda.",
+    industries: ["Peserta", "Lembaga Pelatihan"],
+    prompt: "Tanya-jawab calon peserta",
+  },
+  {
+    slug: "administrasi-pendaftaran",
     icon: Wrench,
-    problem: "Menambal bottleneck operasional lintas departemen",
+    problem: "Pendaftaran & dokumen sertifikat ditangani manual",
     outcome:
-      "Titik yang paling membebani operasional diidentifikasi dan diperbaiki secara bertahap dengan dampak yang terukur.",
-    industries: ["Operasi", "Manufacturing", "Layanan"],
-    prompt: "Optimasi operasional",
+      "Formulir pendaftaran dan dokumen sertifikat diproses otomatis dengan jejak audit — mengurangi salah input dan waktu administrasi.",
+    industries: ["Administrasi", "Sertifikasi"],
+    prompt: "Otomasi pendaftaran",
+  },
+  {
+    slug: "asisten-kurikulum",
+    icon: BookOpen,
+    problem: "Kurikulum & standar kompetensi sulit diakses tim",
+    outcome:
+      "Standar kompetensi, kurikulum, dan SOP menjadi asisten internal yang menjawab pertanyaan tim secara akurat dan terverifikasi.",
+    industries: ["Lembaga Pelatihan", "Sertifikasi"],
+    prompt: "Asisten kurikulum",
+  },
+  {
+    slug: "evaluasi-pelatihan",
+    icon: TrendUp,
+    problem: "Evaluasi & laporan hasil pelatihan memakan waktu",
+    outcome:
+      "Rekap evaluasi peserta dan laporan kelayakan sertifikasi tersaji otomatis — membantu pengambilan keputusan yang lebih cepat.",
+    industries: ["Lembaga Pelatihan", "Sertifikasi"],
+    prompt: "Evaluasi pelatihan",
   },
 ];

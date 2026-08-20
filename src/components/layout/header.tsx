@@ -45,7 +45,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-[68px] w-full max-w-[1240px] items-center justify-between gap-4 px-5 md:px-8">
-        <Link href="/" aria-label="Beranda Nexova AI" className="shrink-0">
+        <Link href="/" aria-label="Beranda Terap AI" className="shrink-0">
           <Logo />
         </Link>
 

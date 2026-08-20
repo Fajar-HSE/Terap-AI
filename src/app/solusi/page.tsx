@@ -9,9 +9,9 @@ import { CtaBand } from "@/components/home/cta-band";
 import { PRIMARY_CTA } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Solusi — Otomasi AI Berdasarkan Masalah Bisnis",
+  title: "Solusi — Otomasi AI untuk Lembaga Pelatihan & Sertifikasi",
   description:
-    "Delapan pola solusi AI yang disusun dari masalah bisnis nyata: dari respons pelanggan, kualifikasi prospek, hingga pemrosesan dokumen.",
+    "Pola solusi AI yang disusun dari masalah nyata lembaga pelatihan dan sertifikasi: dari riset calon klien, penyusunan proposal, hingga database sertifikasi.",
 };
 
 export default function SolutionsPage() {
@@ -20,7 +20,7 @@ export default function SolutionsPage() {
       <PageHeader
         eyebrow="Solusi"
         title="Masalah bisnis yang mana yang sedang menguras tim Anda?"
-        body="Pilih berdasarkan masalah, bukan berdasarkan teknologi. Setiap solusi di bawah adalah pola yang sering kami temukan dan terapkan di berbagai industri."
+        body="Pilih berdasarkan masalah, bukan berdasarkan teknologi. Setiap solusi di bawah adalah pola yang sering kami temukan di lembaga pelatihan dan penyelenggara sertifikasi."
         breadcrumb={[{ label: "Solusi" }]}
       />
 
@@ -57,13 +57,13 @@ export default function SolutionsPage() {
                           </span>
                         ))}
                       </div>
-                      <a
-                        href={`/kontak?topic=${encodeURIComponent(s.slug)}`}
-                        className="group inline-flex items-center gap-1.5 text-sm font-semibold text-accent underline-offset-4 hover:text-accent-deep hover:underline"
-                      >
-                        Diskusikan solusi ini untuk bisnis Anda
-                        <ArrowRight size={15} weight="bold" className="transition-transform group-hover:translate-x-1" aria-hidden />
-                      </a>
+        <a
+          href={`/kontak?topic=${encodeURIComponent(s.slug)}`}
+          className="group inline-flex items-center gap-1.5 text-sm font-semibold text-accent underline-offset-4 hover:text-accent-deep hover:underline"
+        >
+          Kirim brief untuk solusi ini
+          <ArrowRight size={15} weight="bold" className="transition-transform group-hover:translate-x-1" aria-hidden />
+        </a>
                     </div>
                   </article>
                 </Reveal>

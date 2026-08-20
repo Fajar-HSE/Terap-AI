@@ -27,7 +27,7 @@ export function WorkflowMap() {
           <p className="text-xs font-semibold text-paper/70">
             Alur yang kami bangun bersama klien
           </p>
-          <span className="label text-[9px] text-paper/40">SISTEM · ILUSTRASI</span>
+          <span className="label text-[9px] text-paper/40">ALUR IMPLEMENTASI</span>
         </div>
 
         <ol className="relative grid gap-8 sm:grid-cols-2">

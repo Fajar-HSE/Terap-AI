@@ -1,7 +1,7 @@
 export const site = {
   name: "Terap AI",
-  legalName: "PT Nexova Teknologi Indonesia",
-  tagline: "AI Consulting & Implementation",
+  legalName: "Terap AI",
+  tagline: "AI untuk Lembaga Pelatihan & Sertifikasi",
   url: "https://aibisnis.web.id",
   description:
     "Konsultasi strategi dan implementasi AI untuk UMKM hingga enterprise. Kami membantu bisnis menemukan proses yang layak diotomatisasi — lalu mengubahnya menjadi sistem yang benar-benar bekerja.",
@@ -21,5 +21,5 @@ export const nav = [
   { label: "Tentang", href: "/tentang" },
 ] as const;
 
-export const PRIMARY_CTA = "Konsultasikan Peluang AI";
+export const PRIMARY_CTA = "Kirim Brief, Dapat Draf Proposal";
 export const SECONDARY_CTA = "Lihat Solusi AI";

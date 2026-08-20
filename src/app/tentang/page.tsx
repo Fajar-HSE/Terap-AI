@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import {
-  CompassRose,
-  UsersThree,
+  User,
   Lightbulb,
+  UsersThree,
+  CompassRose,
   ShieldCheck,
 } from "@phosphor-icons/react/dist/ssr";
 import { Container } from "@/components/ui/container";
@@ -13,9 +14,9 @@ import { CtaBand } from "@/components/home/cta-band";
 import { PRIMARY_CTA } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Tentang — Mengapa Nexova ada",
+  title: "Tentang — Fajar & Terap AI",
   description:
-    "Kami ada untuk menjembatani teknologi AI dan kebutuhan bisnis nyata — dengan pendekatan yang manusiawi, pragmatis, dan terukur.",
+    "Terap AI dijalankan oleh Fajar, praktisi HSE yang bergerak di dunia pelatihan & sertifikasi. Kami membantu lembaga pelatihan mengambil alih pekerjaan administrasi berulang dengan AI.",
 };
 
 const values = [
@@ -46,37 +47,66 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="Tentang"
-        title="Praktisi yang menjembatani AI dan kebutuhan bisnis nyata"
-        body="Kami bekerja untuk UMKM, perusahaan menengah, dan enterprise — membantu mereka menemukan proses yang layak diotomatisasi, lalu mengubahnya menjadi sistem yang benar-benar bekerja."
+        title="Fajar — praktisi HSE yang membantu lembaga pelatihan bekerja lebih ringan"
+        body="Terap AI lahir dari pengalaman panjang di dunia pelatihan & sertifikasi. Bukan agen AI umum, tetapi partner yang paham konteks lembaga Anda."
         breadcrumb={[{ label: "Tentang" }]}
       />
 
       <section className="bg-surface">
         <Container className="py-16 md:py-24">
-          <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
-            <Reveal className="flex flex-col gap-6">
-              <p className="label text-accent">Berdiri untuk satu alasan</p>
-              <h2 className="text-h1 text-text">
-                AI sering dijual sebagai produk. Kami menjualnya sebagai proses.
-              </h2>
+          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+            <Reveal className="flex flex-col gap-4">
+              <div
+                className="grid aspect-[4/5] w-full place-items-center rounded-xl border border-line bg-surface-warm"
+                aria-hidden
+              >
+                <span className="flex flex-col items-center gap-3 text-muted">
+                  <User size={40} weight="light" />
+                  <span className="label text-center text-muted">
+                    FOTO Fajar
+                    <br />
+                    — ganti dengan foto asli
+                  </span>
+                </span>
+              </div>
+              <p className="text-sm text-muted">
+                Ganti kotak di atas dengan foto asli Anda (rasio 4:5, latar
+                netral).
+              </p>
             </Reveal>
+
             <Reveal delay={0.1} className="flex flex-col gap-6">
+              <p className="label text-accent">Di balik Terap AI</p>
+              <h2 className="text-h1 text-text">
+                AI sebaiknya mengambil alih pekerjaan belakang layar — bukan
+                menggantikan hubungan dengan peserta.
+              </h2>
               <p className="text-lg leading-relaxed text-muted">
-                Hampir setiap minggu, kami melihat bisnis membeli perangkat AI
-                yang mahal lalu gagal dipakai — karena tidak dimulai dari
-                masalah yang nyata.
+                Saya, Fajar, telah lama bergerak di dunia pelatihan dan
+                sertifikasi — melalui HSE SkillUp dan Studio P26. Dari sana saya
+                melihat pola yang sama berulang: tim pelatihan kewalahan oleh
+                pekerjaan administrasi, menyusun proposal, mengejar calon
+                peserta, merapikan database sertifikat — hingga energi terbesar
+                habis sebelum menyentuh hal yang paling penting, yaitu
+                pembelajaran itu sendiri.
               </p>
               <p className="text-lg leading-relaxed text-text">
-                Nexova ada untuk menjadi penyeimbang: konsultan teknologi yang
-                berpikir seperti pemilik bisnis. Kami mengukur setiap rencana
-                dari pengaruhnya terhadap pelanggan, biaya, dan kecepatan kerja
-                — bukan dari kerumitan teknologinya.
+                Terap AI dibuat untuk itu. Kami menggunakan AI guna mengambil
+                alih pekerjaan berulang di belakang layar, sehingga Anda bisa
+                fokus pada peserta. Setiap engagement dimulai dari satu hal
+                sederhana: kirim brief singkat, dapatkan draf proposal — tanpa
+                biaya di awal dan tanpa komitmen.
               </p>
               <p className="text-base leading-relaxed text-muted">
-                Nama “Nexova” adalah placeholder desain dan belum merupakan
-                identitas resmi. Profil tim dan data perusahaan akan dilengkapi
-                dengan informasi nyata sebelum website diluncurkan.
+                Catatan: kredensial spesifik (sertifikasi, pengalaman, dan
+                angka) akan dilengkapi pada kolom di atas sebelum website
+                diluncurkan.
               </p>
+              <div className="mt-2">
+                <ButtonLink href="/kontak" withArrow>
+                  {PRIMARY_CTA}
+                </ButtonLink>
+              </div>
             </Reveal>
           </div>
         </Container>
@@ -99,47 +129,6 @@ export default function AboutPage() {
                 </Reveal>
               );
             })}
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-surface">
-        <Container className="py-16 md:py-24">
-          <Reveal className="max-w-[720px]">
-            <p className="label text-accent">Tim</p>
-            <h2 className="text-h1 mt-4 text-text">Bekerja dengan orang yang memahami konteks Anda</h2>
-            <p className="mt-5 text-lg leading-relaxed text-muted">
-              Profil tim bersifat contoh pada prototype ini. Profil sesungguhnya
-              akan ditambahkan sebelum peluncuran.
-            </p>
-          </Reveal>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {["Penasihat Strategi AI", "Insinyur Otomasi", "Lead Adopsi & Training"].map(
-              (role, i) => (
-                <Reveal key={role} delay={i * 0.06}>
-                  <div className="flex flex-col gap-3 rounded-lg border border-line bg-paper p-6">
-                    <span
-                      className="grid aspect-[4/3] w-full place-items-center rounded-md bg-surface-warm"
-                      aria-hidden
-                    >
-                      <span className="label text-muted">FOTO TIM — PLACEHOLDER</span>
-                    </span>
-                    <h3 className="text-h3 text-text">{role}</h3>
-                    <p className="text-sm text-muted">
-                      Peran desain di tim transformasi AI. Isi dengan nama dan
-                      profil asli.
-                    </p>
-                  </div>
-                </Reveal>
-              ),
-            )}
-          </div>
-
-          <div className="mt-16 flex justify-center">
-            <ButtonLink href="/kontak" withArrow>
-              {PRIMARY_CTA}
-            </ButtonLink>
           </div>
         </Container>
       </section>

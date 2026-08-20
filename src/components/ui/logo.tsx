@@ -15,29 +15,29 @@ export function Logo({ dark = false }: { dark?: boolean }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="32" height="32" rx="7" fill={dark ? "#0e5f52" : "#121715"} />
+          <rect width="32" height="32" rx="7" fill={dark ? "#004a8e" : "#121715"} />
           <path
             d="M16 7 L25 12 L25 20 L16 25 L7 20 L7 12 Z"
-            stroke={dark ? "#e3efea" : "#f6f5f1"}
+            stroke={dark ? "#e6eef6" : "#f6f5f1"}
             strokeWidth="1.8"
             strokeLinejoin="round"
           />
-          <circle cx="16" cy="16" r="2.6" fill="#e3efea" />
+          <circle cx="16" cy="16" r="2.6" fill="#e6eef6" />
           <path
             d="M16 7 V13.4"
-            stroke="#e3efea"
+            stroke="#e6eef6"
             strokeWidth="1.8"
             strokeLinecap="round"
           />
           <path
             d="M7 12 L13.4 15.2"
-            stroke="#e3efea"
+            stroke="#e6eef6"
             strokeWidth="1.8"
             strokeLinecap="round"
           />
           <path
             d="M25 20 L18.6 16.8"
-            stroke="#e3efea"
+            stroke="#e6eef6"
             strokeWidth="1.8"
             strokeLinecap="round"
           />

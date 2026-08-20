@@ -5,6 +5,8 @@ import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeader } from "@/components/ui/section-header";
 
+const FEATURED_SLUGS = ["training", "automation"];
+
 export function ServicePreview() {
   return (
     <section className="bg-paper py-20 md:py-28">
@@ -19,6 +21,7 @@ export function ServicePreview() {
         <div className="mt-14 grid grid-cols-1 border border-line bg-surface sm:grid-cols-2 lg:grid-cols-4">
           {services.map((svc, i) => {
             const Icon = svc.icon;
+            const isFeatured = FEATURED_SLUGS.includes(svc.slug);
             return (
               <Reveal
                 key={svc.slug}
@@ -35,7 +38,7 @@ export function ServicePreview() {
                     <Icon
                       size={26}
                       weight="regular"
-                      className="text-accent"
+                      className={isFeatured ? "text-accent-warm" : "text-accent"}
                       aria-hidden
                     />
                     <ArrowRight
@@ -45,6 +48,9 @@ export function ServicePreview() {
                     />
                   </span>
                   <span className="flex flex-col gap-2">
+                    {isFeatured ? (
+                      <span className="label text-accent-warm">Unggulan</span>
+                    ) : null}
                     <h3 className="text-h3 text-text">{svc.name}</h3>
                     <p className="text-sm leading-relaxed text-muted">{svc.summary}</p>
                   </span>

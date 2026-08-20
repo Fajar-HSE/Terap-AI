@@ -10,16 +10,18 @@
   --paper: #f6f5f1;
   --surface: #ffffff;
   --surface-warm: #edebe4;
-  --accent: #0e5f52;
-  --accent-deep: #0a4a40;
-  --accent-soft: #e3efea;
+  --accent: #004a8e;
+  --accent-deep: #00376b;
+  --accent-soft: #e6eef6;
+  --accent-warm: #ee750e;
+  --accent-warm-soft: #fdeede;
   --text: #1b211e;
   --text-muted: #5b635e;
   --line: #e1dfd9;
   --line-strong: #cfccc4;
   --success: #1f7a5b;
   --warning: #b57918;
-  --error: #b33327;
+  --error: #ed1a20;
 
   /* shadow */
   --shadow-panel: 0 1px 2px rgba(18, 23, 21, 0.04), 0 10px 32px rgba(18, 23, 21, 0.07);
@@ -41,6 +43,8 @@
   --color-accent: var(--accent);
   --color-accent-deep: var(--accent-deep);
   --color-accent-soft: var(--accent-soft);
+  --color-accent-warm: var(--accent-warm);
+  --color-accent-warm-soft: var(--accent-warm-soft);
   --color-text: var(--text);
   --color-muted: var(--text-muted);
   --color-line: var(--line);

@@ -38,14 +38,14 @@ export function Footer() {
       <div className="mx-auto max-w-[1240px] px-5 py-16 md:px-8 md:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div className="flex max-w-sm flex-col gap-6">
-            <Link href="/" aria-label="Beranda Nexova AI">
+            <Link href="/" aria-label="Beranda Terap AI">
               <Logo dark />
             </Link>
             <p className="text-sm leading-relaxed text-paper/70">
-              Konsultasi strategi dan implementasi AI untuk UMKM hingga
-              enterprise. Kami membantu Anda menemukan proses yang layak
-              diotomatisasi — lalu mengubahnya menjadi sistem yang benar-benar
-              bekerja.
+              Konsultasi strategi dan implementasi AI untuk lembaga pelatihan &
+              sertifikasi. Kami membantu Anda dari menyusun proposal hingga
+              mengelola database peserta — lalu mengubahnya menjadi sistem
+              yang benar-benar bekerja.
             </p>
             <ul className="mt-2 flex flex-col gap-3 text-sm">
               <li className="flex items-center gap-2.5 text-paper/85">
@@ -107,9 +107,8 @@ export function Footer() {
         </div>
 
         <p className="mt-6 text-xs leading-relaxed text-paper/35">
-          Nama “Nexova” adalah placeholder desain, bukan identitas resmi
-          perusahaan. Data klien, metrik, dan studi kasus pada prototype ini
-          bersifat contoh dan wajib diganti dengan data nyata sebelum live.
+          Studi kasus dan metrik pada prototype ini masih bersifat contoh dan
+          wajib diganti dengan data nyata sebelum live.
         </p>
       </div>
     </footer>

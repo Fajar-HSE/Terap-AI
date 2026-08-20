@@ -34,7 +34,7 @@ function toArticle(slug: string, raw: string): Article {
     publishedAt: String(meta.publishedAt ?? new Date().toISOString()),
     readingTime: Number(meta.readingTime ?? 3),
     tags: Array.isArray(meta.tags) ? meta.tags.map(String) : [],
-    author: meta.author ? String(meta.author) : "Tim Nexova",
+    author: meta.author ? String(meta.author) : "Fajar",
   };
 }
 

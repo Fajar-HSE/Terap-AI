@@ -9,7 +9,7 @@ export function CtaBand() {
       <Container>
         <div className="flex flex-col gap-10 py-16 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:py-24">
           <Reveal className="max-w-[640px]">
-            <p className="label text-paper/70">Diskusi tanpa komitmen</p>
+            <p className="label text-paper/70">Tinggal kirim brief</p>
             <h2 className="font-display text-3xl font-semibold leading-tight tracking-tight md:text-4xl lg:text-5xl">
               Ada satu proses yang sangat menguras waktu tim Anda?
             </h2>
@@ -21,7 +21,7 @@ export function CtaBand() {
 
           <Reveal delay={0.1} className="flex flex-col gap-3 lg:w-80">
             <a
-              href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Diskusi Peluang AI di Bisnis Saya")}`}
+              href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Kirim Brief: Peluang AI di Bisnis Saya")}`}
               className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-paper px-6 py-4 text-sm font-bold text-ink transition-transform duration-200 hover:-translate-y-0.5"
             >
               <EnvelopeSimple size={18} weight="bold" aria-hidden />

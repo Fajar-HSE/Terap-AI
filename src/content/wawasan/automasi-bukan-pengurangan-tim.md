@@ -4,7 +4,7 @@ excerpt: "Argumen paling umum terhadap AI adalah ketakutan kehilangan pekerjaan.
 publishedAt: "2026-06-09T09:00:00.000Z"
 readingTime: 5
 tags: ["Otomasi", "Manusia & AI"]
-author: "Tim Nexova"
+author: "Fajar"
 ---
 
 ## Bekerja lebih sedikit di atas tumpukan

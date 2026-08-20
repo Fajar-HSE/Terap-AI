@@ -61,7 +61,7 @@ function mapPost(p: GhostPost): Article {
     publishedAt: p.published_at ?? new Date().toISOString(),
     readingTime: p.reading_time ?? 3,
     tags: (p.tags ?? []).map((t) => t.name),
-    author: p.primary_author?.name ?? "Tim Nexova",
+    author: p.primary_author?.name ?? "Fajar",
   };
 }
 

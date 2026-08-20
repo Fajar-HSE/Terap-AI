@@ -4,7 +4,7 @@ excerpt: "Banyak perusahaan gagal menerapkan AI bukan karena teknologi, tetapi k
 publishedAt: "2026-08-04T09:00:00.000Z"
 readingTime: 6
 tags: ["AI Readiness", "Strategi"]
-author: "Tim Nexova"
+author: "Fajar"
 ---
 
 ## AI dimulai dari memahami bisnis Anda sendiri

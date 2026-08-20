@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = `${site.name} — AI Consulting & Implementation`;
+export const alt = `${site.name} — AI untuk Lembaga Pelatihan & Sertifikasi`;
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -27,7 +27,7 @@ export default function OpengraphImage() {
               width: 56,
               height: 56,
               borderRadius: 14,
-              backgroundColor: "#0e5f52",
+              backgroundColor: "#004a8e",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
                 width: 20,
                 height: 28,
                 borderRadius: 6,
-                border: "3px solid #e3efea",
+                border: "3px solid #e6eef6",
               }}
             />
           </div>
@@ -54,11 +54,11 @@ export default function OpengraphImage() {
             maxWidth: 880,
           }}
         >
-          <div style={{ fontSize: 16, letterSpacing: 3, color: "#8fd1c2" }}>
-            AI CONSULTING & IMPLEMENTATION
+          <div style={{ fontSize: 16, letterSpacing: 3, color: "#9fc3e8" }}>
+            AI UNTUK LEMBAGA PELATIHAN & SERTIFIKASI
           </div>
           <div style={{ fontSize: 64, fontWeight: 700, letterSpacing: -2, lineHeight: 1.05 }}>
-            AI yang bekerja nyata untuk bisnis Anda
+            AI untuk lembaga pelatihan & sertifikasi
           </div>
         </div>
         <div
@@ -71,9 +71,9 @@ export default function OpengraphImage() {
           }}
         >
           <span>Konsultasi</span>
-          <span style={{ width: 5, height: 5, borderRadius: 99, backgroundColor: "#0e5f52" }} />
-          <span>Implementation</span>
-          <span style={{ width: 5, height: 5, borderRadius: 99, backgroundColor: "#0e5f52" }} />
+          <span style={{ width: 5, height: 5, borderRadius: 99, backgroundColor: "#004a8e" }} />
+          <span>Implementasi</span>
+          <span style={{ width: 5, height: 5, borderRadius: 99, backgroundColor: "#004a8e" }} />
           <span>Training</span>
         </div>
       </div>

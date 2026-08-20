@@ -7,9 +7,9 @@ import { PageHeader } from "@/components/ui/page-header";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Kontak — Konsultasikan Peluang AI di Bisnis Anda",
+  title: "Kontak — Kirim Brief, Dapat Draf Proposal",
   description:
-    "Diskusikan peluang AI untuk bisnis Anda. Konsultasi awal tanpa biaya dan tanpa komitmen.",
+    "Kirim brief singkat, dapatkan draf proposal pelatihan & sertifikasi. Tanpa biaya di awal, tanpa komitmen.",
 };
 
 const channels = [
@@ -50,8 +50,8 @@ export default async function ContactPage({
     <>
       <PageHeader
         eyebrow="Kontak"
-        title="Diskusikan peluang AI di bisnis Anda"
-        body="Konsultasi awal tanpa biaya dan tanpa komitmen. Ceritakan satu proses yang paling menguras waktu tim Anda, dan kami bantu melihat apakah proses itu layak diotomatisasi."
+        title="Kirim brief, dapat draf proposal"
+        body="Tanpa biaya di awal dan tanpa komitmen. Ceritakan satu proses yang paling menguras waktu tim Anda — misalnya penyusunan proposal atau pengelolaan peserta — dan kami bantu buatkan draf solusinya."
         breadcrumb={[{ label: "Kontak" }]}
       />
 
@@ -103,8 +103,8 @@ export default async function ContactPage({
                     tepat untuk masalah Anda — tanpa memaksa.
                   </p>
                   <p className="text-xs leading-relaxed text-muted">
-                    Nama “Nexova”, email, dan nomor telepon di halaman ini
-                    adalah placeholder. Ganti dengan data resmi sebelum live.
+                    Pastikan email dan nomor WhatsApp di halaman ini sudah
+                    mengarah ke akun resmi Anda sebelum website diluncurkan.
                   </p>
                 </div>
               </Reveal>
