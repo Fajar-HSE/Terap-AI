@@ -1,19 +1,17 @@
-import { readdirSync, readFileSync } from "node:fs";
-import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import type { Article } from "@/lib/articles";
+import { RAW_ARTICLES } from "@/lib/generated-content";
 
 /**
  * Sumber artikel lokal: file Markdown dengan frontmatter YAML di
- * `src/content/wawasan/*.md`. Artikel dirender menjadi HTML saat build,
- * lalu dirender pada halaman via `.prose-article`.
+ * `src/content/wawasan/*.md`. Konten di-inline ke bundle via
+ * `scripts/inline-content.mjs` (hasil: `src/lib/generated-content.ts`)
+ * supaya dapat dibaca di runtime Cloudflare Worker tanpa akses filesystem.
  *
  * Slug diambil dari nama file (tanpa ekstensi). Frontmatter yang boleh
  * diisi: title, excerpt, publishedAt, readingTime, tags, author, cover.
  */
-
-const CONTENT_DIR = path.join(process.cwd(), "src", "content", "wawasan");
 
 function readFrontmatter(raw: string) {
   const { data } = matter(raw);
@@ -40,12 +38,8 @@ function toArticle(slug: string, raw: string): Article {
 
 /** Muat semua artikel lokal, terurut dari yang terbaru. */
 export function loadMarkdownArticles(): Article[] {
-  const files = readdirSync(CONTENT_DIR)
-    .filter((f) => f.endsWith(".md"))
-    .map((f) => ({ slug: f.replace(/\.md$/, ""), file: path.join(CONTENT_DIR, f) }));
-
-  return files
-    .map(({ slug, file }) => toArticle(slug, readFileSync(file, "utf8")))
+  return Object.entries(RAW_ARTICLES)
+    .map(([slug, raw]) => toArticle(slug, raw))
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 }
 
